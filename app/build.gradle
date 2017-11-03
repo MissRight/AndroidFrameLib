@@ -52,8 +52,8 @@ dependencies {
 
 }
 
-def siteUrl = 'https://github.com/MissRight/AFrameLib' // 项目的主页
-def gitUrl = 'git@github.com:MissRight/AFrameLib.git' // Git仓库的url
+def siteUrl = 'https://github.com/MissRight/AndroidFrameLib' // 项目的主页
+def gitUrl = 'git@github.com:MissRight/AndroidFrameLib.git' // Git仓库的url
 group = "com.axl.jacobs.frameLib" // Maven Group ID for the artifact，一般填你唯一的包名
 
 install {
