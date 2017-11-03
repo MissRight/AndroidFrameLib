@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'me.tatarka:gradle-retrolambda:3.6.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 17
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '27.0.0'
+    multidexVersion = "1.0.2"
+    rxjavaVersion = '2.1.5'
+    rxandroidVersion = '2.0.1'
+    rxLifecycleVersion = '2.2.0'
+    rxpermissionsVersion = '0.9.4@aar'
+    rxbindingVersion = '2.0.0'
+
+    butterKnifeVersion = '8.8.1'
+    loggerVersion = "2.1.1"
+    gsonVersion = "2.8.2"
+
+    buglyVersion = "2.6.5"
+    umengVersion = "6.1.2"
+
+
+    BaseRecyclerViewAdapterHelperVersion = "2.9.31"
+}
